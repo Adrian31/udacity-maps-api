@@ -32,7 +32,7 @@
         <h1>Find Your New NYC Home<h1>
           <div>
             <input id="show-listings" type="button" value="Show Listings">
-            <input id="hide-listings" type="button" value="Show Listings">
+            <input id="hide-listings" type="button" value="Hide Listings">
           </div>
         </div>
         <div id="map"></div>
@@ -138,7 +138,7 @@
         //This function will loop through the listings and hide them all
         function hideListings() {
           for(var i = 0; i < markers.length; i++) {
-            markers[i]setMap(null);
+            markers[i].setMap(null);
           }
         }
     </script>
